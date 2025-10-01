@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #151515;
+            }
+            .wrapper{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .title{
+                font-size: 50px;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .cards{
+                display: flex;
+                justify-content: space-between;
+            }
+            .card{
+                width: 30%;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
+            .card:hover{
+                transform: scale(1.1);
+            }
+            .card-content{
+                text-align: center;
+            }
+            .card-content h2{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .card-content p{
+                font-size: 16px;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <h1>TECH FEST</h1>
+        </div>
+        <div class="cards">
+          <div class="card card-1">
+            <div class="card-content">
+              <h2>Day 1</h2>
+              <p>Some description about the event</p>
+            </div>
+          </div>
+          <div class="card card-2">
+            <div class="card-content">
+              <h2>Day 2</h2>
+              <p>Some description about the event</p>
+            </div>
+          </div>
+          <div class="card card-3">
+            <div class="card-content">
+              <h2>Day 3</h2>
+              <p>Some description about the event</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src=""></script>
 </html>
